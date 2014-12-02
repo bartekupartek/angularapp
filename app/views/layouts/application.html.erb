@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 <head>
-  <title>Angularapp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <title>Bookstore</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag "application", controller_name %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+
 <%= yield %>
+
 
 </body>
 </html>
